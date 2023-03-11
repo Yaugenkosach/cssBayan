@@ -97,17 +97,20 @@
   }
 
   .acc-input:checked ~ .acc-meme {
-    display: block;
+    visibility: visible;
+    height: 16rem;
+    width: 70%;
   }
 
   .acc-meme {
     margin: auto;
-    display: none;
+    display: block;
     padding: 0.8rem 1rem;
-    height: 16rem;
-    width: 70%;
+    height: 0;
+    width: 0;
     background-size: contain;
     background-repeat: no-repeat;
+    visibility: hidden;
   }
 
   .meme-1 {
