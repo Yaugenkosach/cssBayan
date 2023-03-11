@@ -36,6 +36,10 @@
     color: blue;
   }
 
+  .body-title-text {
+    color: black;
+  }
+
   /* accordeon */
 
   .accordeon {
@@ -44,7 +48,16 @@
   }
 
   .accordeon-item {
+    /*    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;*/
     border-top: 0.06rem solid black;
+    cursor: pointer;
+  }
+
+  .accordeon:hover {
+    color: #000;
   }
 
   .acc-title {
@@ -70,6 +83,19 @@
     color: #000;
   }
 
+  .plus {
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    background-image: url(img/cross-ico.jpg);
+    background-size: 100%;
+    visibility: hidden;
+  }
+
+  .acc-input:checked ~ .plus {
+    visibility: visible;
+  }
+
   .acc-input:checked ~ .acc-meme {
     display: block;
   }
@@ -90,4 +116,8 @@
 
   .meme-2 {
     background-image: url(img/meme2.jpg);
+  }
+
+  .meme-3 {
+    background-image: url(img/meme3.jpg);
   }
