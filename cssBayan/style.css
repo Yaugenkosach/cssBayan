@@ -83,7 +83,7 @@
     color: #000;
   }
 
-  .plus {
+  .plus-ico {
     display: block;
     height: 1rem;
     width: 1rem;
@@ -92,7 +92,7 @@
     visibility: hidden;
   }
 
-  .acc-input:checked ~ .plus {
+  .acc-input:checked + .plus-ico {
     visibility: visible;
   }
 
@@ -120,4 +120,8 @@
 
   .meme-3 {
     background-image: url(img/meme3.jpg);
+  }
+
+  .meme-4 {
+    background-image: url(img/meme4.jpg);
   }
