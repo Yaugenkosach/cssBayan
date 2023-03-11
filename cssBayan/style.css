@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('fonts/inika-v21-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/inika-v21-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-regular - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('fonts/inter-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/inter-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-700 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* body */
+
+  body {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1,5;
+    color: blue;
+  }
+
+  /* accordeon */
+
+  .accordeon {
+    max-width: 30rem;
+    margin: 1rem auto;
+  }
+
+  .accordeon-item {
+    border-top: 0.06rem solid black;
+  }
+
+  .acc-title {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .acc-title:hover {
+    color: black;
+  }
+
+  .acc-input {
+    width: 0;
+    height: 0;
+    appearance: none;
+  }
+
+  .acc-input:checked + .acc-meme {
+    display: block;
+  }
+
+  .acc-meme {
+    display: none;
+    padding: 0.8rem 1rem;
+    height: 25rem;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .meme-1 {
+    background-image: url(img/meme1.jpg);
+  }
+
+  .meme-2 {
+    background-image: url(img/meme2.jpg);
+  }
