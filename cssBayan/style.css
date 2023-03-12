@@ -48,10 +48,6 @@
   }
 
   .accordeon-item {
-    /*    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;*/
     border-top: 0.06rem solid black;
     cursor: pointer;
   }
