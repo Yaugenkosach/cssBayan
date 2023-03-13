@@ -53,21 +53,12 @@
     cursor: pointer;
   }
 
-  .accordeon:hover {
-    color: #000;
-  }
-
   .acc-title {
     padding: 0.5rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-  }
-
-  .acc-title:hover {
-    color: black;
-    transition: color .3s ease-out;
   }
 
   .acc-input {
@@ -89,24 +80,8 @@
     visibility: hidden;
   }
 
-  .accordeon:hover .plus-ico {
-    visibility: visible;
-  }
-
-  .accordeon-item:hover .plus-ico {
-    transform: rotate(45deg);
-    visibility: visible;
-  }
-
   .acc-input:checked ~ .acc-meme {
     transition: all 1s ease-out;
-    visibility: visible;
-    height: 16rem;
-    width: 70%;
-  }
-
-  .accordeon-item:hover .acc-meme {
-    transition: all 1s ease-in;
     visibility: visible;
     height: 16rem;
     width: 70%;
@@ -138,6 +113,35 @@
 
   .meme-4 {
     background-image: url(img/meme4.jpg);
+  }
+
+  @media (hover: hover) {
+
+    .accordeon:hover {
+      color: #000;
+    }
+
+    .acc-title:hover {
+      color: black;
+      transition: color .3s ease-out;
+    }
+
+    .accordeon:hover .plus-ico {
+      visibility: visible;
+    }
+
+    .accordeon-item:hover .plus-ico {
+      transform: rotate(45deg);
+      visibility: visible;
+    }
+
+    .accordeon-item:hover .acc-meme {
+      transition: all 1s ease-in;
+      visibility: visible;
+      height: 16rem;
+      width: 70%;
+    }
+
   }
 
 /* tablet */
