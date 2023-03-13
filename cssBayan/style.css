@@ -94,14 +94,14 @@
   }
 
   .acc-input:checked ~ .acc-meme {
-    transition: 1s ease-out;
+    transition: all 1s ease-out;
     visibility: visible;
     height: 16rem;
     width: 70%;
   }
 
   .acc-input:hover ~ .acc-meme {
-    transition: 1s ease-out;
+    transition: all 1s ease-in;
     visibility: visible;
     height: 16rem;
     width: 70%;
@@ -116,6 +116,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     visibility: hidden;
+    transition: all 1s ease-in;
   }
 
   .meme-1 {
