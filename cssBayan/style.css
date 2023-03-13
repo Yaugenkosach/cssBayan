@@ -44,6 +44,7 @@
 
   .accordeon {
     max-width: 30rem;
+    min-height: 100rem;
     margin: 1rem auto;
   }
 
@@ -83,24 +84,24 @@
     display: block;
     height: 1rem;
     width: 1rem;
-    background-image: url(img/cross-ico.jpg);
+    background-image: url(img/plus-ico.png);
     background-size: 100%;
     visibility: hidden;
   }
 
-  .acc-input:checked ~ .plus-ico {
+  .acc-input:hover ~ .acc-title {
     visibility: visible;
   }
 
   .acc-input:checked ~ .acc-meme {
-    transition: .3s ease-out;
+    transition: 1s ease-out;
     visibility: visible;
     height: 16rem;
     width: 70%;
   }
 
   .acc-input:hover ~ .acc-meme {
-    transition: .3s ease-out;
+    transition: 1s ease-out;
     visibility: visible;
     height: 16rem;
     width: 70%;
@@ -135,11 +136,32 @@
 
 /* tablet */
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 992px) {
 
     .plus-ico {
       background-image: url(img/plus-ico.png);
       visibility: visible;
     }
 
+    body {
+      font-family: Inika;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  /* mobile */
+
+  @media screen and (max-width: 768px) {
+
+    .plus-ico {
+      background-image: url(img/plus-ico.png);
+      visibility: visible;
+    }
+
+    body {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 400;
+    }
   }
