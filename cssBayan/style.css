@@ -89,7 +89,12 @@
     visibility: hidden;
   }
 
-  .acc-input:hover ~ .acc-title {
+  .accordeon:hover .plus-ico {
+    visibility: visible;
+  }
+
+  .accordeon-item:hover .plus-ico {
+    transform: rotate(45deg);
     visibility: visible;
   }
 
