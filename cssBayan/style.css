@@ -43,9 +43,11 @@
   /* accordeon */
 
   .accordeon {
+    background-color: bisque;
+    padding: .4rem;
     max-width: 30rem;
-    min-height: 100rem;
-    margin: 1rem auto;
+    min-height: 50rem;
+    margin: 0 auto;
   }
 
   .accordeon-item {
@@ -157,6 +159,7 @@
       font-family: Inika;
       font-style: normal;
       font-weight: 400;
+      font-size: .9rem;
     }
   }
 
@@ -173,5 +176,6 @@
       font-family: Inter;
       font-style: normal;
       font-weight: 400;
+      font-size: .8rem;
     }
   }
